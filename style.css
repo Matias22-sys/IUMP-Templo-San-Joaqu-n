@@ -1,20 +1,75 @@
+/* Reset y base */
 body {
-  font-family: sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  padding: 2rem;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #1e1e1e;
+  color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Imagen superior estilo Notion */
+.hero {
+  background-image: url('banner.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px #000;
+}
+
+/* Contenedor principal */
+.container {
   max-width: 800px;
   margin: auto;
+  padding: 20px;
 }
 
-h1, h2 {
-  color: #003366;
+/* Bloques */
+.bienvenida {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-.reunion {
-  background: #ffffff;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-left: 4px solid #003366;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+.versiculo {
+  background-color: #222;
+  padding: 20px;
+  border-left: 5px solid #ffc107;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+blockquote {
+  font-style: italic;
+  color: #ddd;
+}
+
+/* Lista de reuniones */
+.reuniones ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.reuniones li {
+  background-color: #2c2c2c;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.reuniones li:hover {
+  background-color: #444;
+}
+
+.reuniones a {
+  color: #ffc107;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.reuniones a:hover {
+  text-decoration: underline;
 }
